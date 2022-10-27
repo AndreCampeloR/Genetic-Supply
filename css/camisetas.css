@@ -1,0 +1,214 @@
+@import url(reset.css);
+:root{
+    --color-geral:aqua;
+}
+.flex{
+    display: flex;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.space{
+    justify-content: space-around;
+}
+.row{
+    flex-direction: row;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+a{ text-decoration: none;
+    color: inherit;
+}
+/*=========== parte superior =========*/
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255); 
+    position: sticky;
+    top: 0;
+    box-shadow: 12px 5px 5px lightgray;
+} 
+h1{
+    font-size: 3.5rem;
+}
+#logo{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    font-family: 'Caesar Dressing';
+}
+#menu{
+    justify-content: flex-end;
+    width: 70%;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
+}
+#listasecundaria {
+    width: 140px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 1px 1px 5px gray;
+    /* border-bottom: 2px outset black; */
+    position: fixed;
+}
+.coluna{
+    flex-direction: column;
+}
+.carrinho{
+    align-items: center;
+}
+.login{
+    align-items: center;
+}
+li{
+    padding: 10px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+#input{
+    padding-bottom: 5px;
+    align-items: flex-end;
+}
+#produtos{
+    padding-top: 14px;
+}
+.btn{
+    padding-right: 70px;
+}
+
+/*=========== JS SUPERIOR =========*/
+.itemlista{
+    display: flex;
+    justify-content: space-between;
+}
+.active{
+    visibility: visible;
+    position: fixed;
+}
+.desative{
+    visibility: hidden;
+}
+/* =========== PARTE CENTRAL ========= */
+.principal{
+    padding: 90px 15px 15px 15px;
+}
+.imgMaisVendidos{
+    width: 100%;
+    height: 400px; 
+}
+.cardGeral{
+    width: 25%;
+    height: 400px;
+}
+.card-img-palhaco:hover, .card-img-panico:hover{
+    height: 380px;
+
+}
+.elemento{
+    height: 390px;
+    padding-top: 15px;
+}
+.panico:hover{ 
+    height: 420px;
+    padding: 0 0 20px 0;
+}
+.panico{
+    height: 360px;
+    padding-top: 27px;
+}
+.palhaco{
+    height: 425px;
+    padding-bottom: 20px;
+}
+.nf{
+    height: 380px;
+    padding-bottom: 20px;
+}
+.zumbi{
+    width: 350px;
+    padding-left: 3px;
+}
+.padrao{
+     width: 415px;
+     height: 415px;
+     padding: 0 10px 10px 0;
+}
+.produtos{
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
+    font-size: 1.1rem;
+    padding-bottom: 4px;
+}
+.espaco{
+   margin-top: 100px;
+}
+.valor{
+    margin: 4px 0 4px 0;
+}
+.divComprar{
+    margin-top: 5px;
+}
+.comprar{
+    width: 110px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+.comprar:hover{
+    color: #fff;
+    background-color: black;
+}
+#maisVendidos{
+    width: auto;
+    height: auto;
+    font-size: 40px;
+    font-family: 'Metamorphous', cursive;
+    font-weight: bold
+}
+#cardPrincipal1{
+    margin-right: 10px;
+}
+/*=========== parte inferior =========*/
+
+footer{
+    width: 100%;
+    height: 170px;
+    background-color:rgb(204, 204,  204);
+    margin: 15px 0 15px 0;
+}
+h4{
+    font-weight: bold;
+    padding-top: 20px;
+}
+#logoRodape{
+    font-size: 2.5rem;
+}
+#subLogo{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(204, 204,  204);
+    justify-content: center;
+    align-items: center;
+    font-family: 'Caesar Dressing';
+}
+.footerh:hover{
+    color: red;
+}
+.footerh{
+    padding: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
+}
+.icone{
+    width: 40px;
+    height: 40px;
+}

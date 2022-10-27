@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/script.js"></script>
+<link rel="stylesheet" href="css/indisponivel.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet"> <!--fonte logo -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet"><!--fonte form -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> <!--icone email-->
+    <title>GENETIC</title>
+</head>
+<body> 
+    <!--INICIO DO HEADER -->
+<header class="flex">
+<div class="flex" id="logo"><a href="index.html"><h1>GENETIC</h1></a></div> <!-- LOGO -->
+  <div id="menu" class="flex"> <!--DIV MENU -->
+    <ul class="flex">
+      <li id="produtos" class="flex coluna">
+      <a class="flex" href="" onmouseover="active()" onmouseout="desative()">PRODUTOS
+      <span class="material-symbols-outlined">expand_more</span></a>
+  <div class=""> <!--DIV SUBMENU -->
+      <nav class="flex" href="" onmouseover="active()" onmouseout="desative()">
+    <ul id="listasecundaria" class="desative">
+      <a href="moletom.html"><li>Moletom</li></a>
+      <a href="camisetas.html"><li>Camisetas</li></a>
+      <a href="indisponivel.html"><li>Calça</li></a>
+      <a href="indisponivel.html"><li>Bermuda</li></a>
+      <a href="indisponivel.html"><li>Feminino</li></a>
+      <a href="indisponivel.html"><li>Acessório</li></a>
+    </ul> 
+      </nav>
+  </div>   <!--FECHA SUBMENU -->
+      </li>
+       <li class="flex carrinho"><a href="">CARRINHO</a></li>
+       <li class="flex login"><a href="">LOGIN</a></li> 
+       <li class="flex btn"><a class="flex" id="input" href=""><span id="pesquisa" class="material-symbols-outlined">search</span><input type="text"></a></li>
+    </ul>
+   </div> <!--FECHA MENU -->
+</header> <!--FINAL DO HEADER -->
+     <!--INICIO DO MAIN -->
+   <main class="flex center">
+    <form class="flex center coluna" action="" method="post">
+       <div class="ops"><span>Ops!</span></div>
+           <div class="texto"><span> Esse produto encontra-se indisponível. 
+            <br>
+            Deixe seu e-mail que avisaremos quando chegar.</span></div>
+           <div class="flex center">
+               <input class="input" type="text" name="nome" placeholder="Digite seu Nome" required>
+           <div class=""><i class="fa fa-envelope icon fa"></i>
+               <input class="input" type="email" name="email" placeholder= "Digite seu E-mail" required> 
+           </div> 
+        </div>
+        <div class="flex center divAviso"> <br>
+           <input class="inputAviso input" type="submit" value="Avise-me quando disponível">
+        </div>
+    </form>
+</main>
+    <footer class="flex space"> 
+      <div class="flex" id="subLogo"><a href="index.html"><h3 id="logoRodape">GENETIC</h3></a></div>
+      <div class="coluna flex">
+          <a class="footerh" href=""><h4>Contato</h4></a>
+          <a class="footerh" href="">Dúvidas frequentes</a>
+          <a class="footerh" href="">Trocas e devoluções</a>
+          <a class="footerh" href="">Fretes e entregas</a>
+        </div>
+      <div class="coluna flex"> 
+          <a class="footerh" href=""><h4>Quem somos</h4></a>
+          <a class="footerh" href="">Sobre nós</a>
+        </div>
+        <div class="coluna flex">
+            <a class="footerh" href=""><h4>Redes Sociais</h4></a>
+            <a class="footerh" href="https://www.instagram.com/genetic.supply/"> <img class="icone" src="img/instaicone.png" alt=""></a>
+            <a class="footerh" href=""> <img class="icone" src="img/zapicone.png" alt=""></a>
+          </div>
+    </footer>
+</body>
+</html>

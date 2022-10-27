@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/script.js"></script>
+<link rel="stylesheet" href="css/camisetas.css">
+<link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet"> <!--fonte logo -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet"><!--fonte form -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!--icone pesquisa-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!--icone seta-->
+    <title>GENETIC</title>
+</head>
+<body> 
+    <!--INICIO DO HEADER -->
+<header class="flex">
+<div class="flex" id="logo"><a href="index.html"><h1>GENETIC</h1></a></div> <!-- LOGO -->
+  <div id="menu" class="flex"> <!--DIV MENU -->
+    <ul class="flex">
+      <li id="produtos" class="flex coluna">
+          <a class="flex" href="" onmouseover="active()" onmouseout="desative()">PRODUTOS
+            <span class="material-symbols-outlined">expand_more</span></a>
+            <div class=""> <!--DIV SUBMENU -->
+                <nav class="flex" href="" onmouseover="active()" onmouseout="desative()">
+                    <ul id="listasecundaria" class="desative">
+                        <a href="moletom.html"><li>Moletom</li></a>
+                        <a href="camisetas.html"><li>Camisetas</li></a>
+                        <a href="indisponivel.html"><li>Calça</li></a>
+                        <a href="indisponivel.html"><li>Bermuda</li></a>
+                        <a href="indisponivel.html"><li>Feminino</li></a>
+                        <a href="indisponivel.html"><li>Acessório</li></a>
+                    </ul> 
+                </nav>
+            </div>   <!--FECHA SUBMENU -->
+        </li>
+        <li class="flex carrinho"><a href="">CARRINHO</a></li>
+        <li class="flex login"><a href="">LOGIN</a></li> 
+        <li class="flex btn"><a class="flex" id="input" href=""><span id="pesquisa" class="material-symbols-outlined">search</span><input type="text"></a></li>
+    </ul>
+</div> <!--FECHA MENU -->
+</header> <!--FINAL DO HEADER -->
+<!--INICIO DO MAIN -->
+<main>
+    <section class="principal" >
+     <div class="flex space ">             
+         <figure class="card-img-elemento cardGeral" > <img class="imgMaisVendidos elemento" src="img/elementosB.png" onmouseover="this.src='./img/frenteElementosB.png'" 
+          onmouseout="this.src='./img/elementosB.png'" alt="CAMISETA PENTAGRAMA" title="CAMISETA PENTAGRAMA "> 
+         </figure> 
+         <figure class="card-img-panico flex cardGeral"> <img class="imgMaisVendidos panico" src="img/panicoB.png" onmouseover="this.src='./img/frentepadraoB.png'" 
+          onmouseout="this.src='./img/panicoB.png'" alt="CAMISETA PANICO"  title="CAMISETA PANICO "> 
+         </figure> 
+         <figure class="card-img-palhaco flex cardGeral"> <img class="imgMaisVendidos palhaco" src="img/palhaçoB.png" onmouseover="this.src='./img/frentepadraoB.png'" 
+          onmouseout="this.src='./img/palhaçoB.png'" alt="CAMISETA PALHAÇO"  title="CAMISETA PALHAÇO"> 
+         </figure> 
+        </div>
+<div id="cardPrincipal1" class="flex space">
+    <div id="card1" class="flex center coluna"> <h2 class="produtos">CAMISETA PENTAGRAMA</h2>
+           <p class="produtos valor">R$ 60,00</p>
+           <form name="size" class="size" action="" method="post">
+        <div class="flex center"> 
+           <label class="flex" for="p">P
+           <input type="radio" name="tamanho" id="p">
+           </label>
+           <label class="flex" for="m">M
+           <input type="radio" name="tamanho" id="m">
+           </label>
+           <label class="flex" for="g">G
+           <input type="radio" name="tamanho" id="g">
+           </label>
+           <label class="flex" for="gg">GG
+           <input type="radio" name="tamanho" id="gg">
+           </label>
+        </div> 
+           <div class="flex center divComprar"><input type="button" value="COMPRAR" class="comprar"></div>
+           </form> 
+    </div>
+            <div id="card2" class="flex coluna center"> <h2 class="produtos">CAMISETA PANICO</h2>
+                  <p class="produtos valor">R$ 60,00</p>
+                  <form name="size" class="size" action="" method="post">
+               <div class="flex center"> 
+                   <label class="flex" for="p">P
+                   <input type="radio" name="tamanho" id="p">
+                   </label>
+                   <label class="flex" for="m">M
+                   <input type="radio" name="tamanho" id="m">
+                   </label>
+                   <label class="flex" for="g">G
+                   <input type="radio" name="tamanho" id="g">
+                   </label>
+                   <label class="flex" for="gg">GG
+                   <input type="radio" name="tamanho" id="gg">
+                   </label>
+                </div>
+                 <div class="flex center divComprar"><input type="button" value="COMPRAR" class="comprar"></div>
+                   </form>
+            </div>
+                 <div id="card3" class="flex coluna center">
+                      <h2 class="produtos">CAMISETA PALHAÇO</h2>
+                      <p class="produtos valor">R$ 60,00</p>
+                      <form name="size" class="size" action="" method="post">
+                    <div class="flex center"> 
+                      <label class="flex" for="p">P
+                      <input type="radio" name="tamanho" id="p">
+                      </label>
+                      <label class="flex" for="m">M
+                      <input type="radio" name="tamanho" id="m">
+                      </label>
+                      <label class="flex" for="g">G
+                      <input type="radio" name="tamanho" id="g">
+                      </label>
+                      <label class="flex" for="gg">GG
+                      <input type="radio" name="tamanho" id="gg">
+                      </label>
+                    </div> 
+                      <div class="flex center divComprar"><input type="button" value="COMPRAR" class="comprar"></div>
+                      </form>
+                 </div>
+</div>
+    <div class="flex space espaco ">             
+        <figure class="card-img-zumbi cardGeral" > <img class="imgMaisVendidos zumbi" src="img/zumbiB.png" onmouseover="this.src='./img/costasNFB.png'" 
+          onmouseout="this.src='./img/zumbiB.png'" alt="CAMISETA ZUMBI" title="CAMISETA ZUMBI"> 
+             </figure> 
+             <figure class="card-img-NF cardGeral"> <img class="imgMaisVendidos nf" src="img/NFB.png" onmouseover="this.src='./img/costasNFB.png'" 
+              onmouseout="this.src='./img/NFB.png'" alt="NFGenetic"  title="CAMISETA NF"> 
+             </figure> 
+             <figure class="card-img-padrao cardGeral"> <img class="imgMaisVendidos padrao" src="img/frentepadraoB.png" onmouseover="this.src='./img/costasNFB.png'" 
+              onmouseout="this.src='./img/frentepadraoB.png'" alt="CAMISETA PADRÃO"  title="CAMISETA PADRÃO"> 
+             </figure> 
+            </div>
+<div id="cardPrincipal2" class="flex space">
+    <div id="card4" class="flex center coluna"> <h2 class="produtos">CAMISETA ZUMBI</h2>
+        <p class="produtos valor">R$ 60,00</p>
+        <form name="size" class="size" action="" method="post">
+     <div class="flex center"> 
+        <label class="flex" for="p">P
+        <input type="radio" name="tamanho" id="p">
+        </label>
+        <label class="flex" for="m">M
+        <input type="radio" name="tamanho" id="m">
+        </label>
+        <label class="flex" for="g">G
+        <input type="radio" name="tamanho" id="g">
+        </label>
+        <label class="flex" for="gg">GG
+        <input type="radio" name="tamanho" id="gg">
+        </label>
+     </div> 
+     <div class="flex center divComprar"><input type="button" value="COMPRAR" class="comprar"></div>
+        </form> 
+    </div>
+        <div id="card5" class="flex coluna center"> <h2 class="produtos">CAMISETA NO FEELINGS</h2>
+            <p class="produtos valor">R$ 60,00</p>
+            <form name="size" class="size" action="" method="post">
+          <div class="flex center"> 
+            <label class="flex" for="p">P
+            <input type="radio" name="tamanho" id="p">
+            </label>
+            <label class="flex" for="m">M
+            <input type="radio" name="tamanho" id="m">
+            </label>
+            <label class="flex" for="g">G
+            <input type="radio" name="tamanho" id="g">
+            </label>
+            <label class="flex" for="gg">GG
+            <input type="radio" name="tamanho" id="gg">
+            </label>
+          </div>
+          <div class="flex center divComprar"><input type="button" value="COMPRAR" class="comprar"></div>
+            </form>
+        </div>
+            <div id="card6" class="flex coluna center">
+                <h2 class="produtos">CAMISETA PADRÃO </h2>
+                <p class="produtos valor">R$ 60,00</p>
+                <form name="size" class="size" action="" method="post">
+              <div class="flex center"> 
+                <label class="flex" for="p">P
+                <input type="radio" name="tamanho" id="p">
+                </label>
+                <label class="flex" for="m">M
+                <input type="radio" name="tamanho" id="m">
+                </label>
+                <label class="flex" for="g">G
+                <input type="radio" name="tamanho" id="g">
+                </label>
+                <label class="flex" for="gg">GG
+                <input type="radio" name="tamanho" id="gg">
+                </label>
+              </div> 
+              <div class="flex center divComprar"><input type="button" value="COMPRAR" class="comprar"></div>
+                </form>
+            </div>
+</div>
+</section>
+</main>
+<footer class="flex space"> 
+    <div class="flex" id="subLogo"><a href="index.html"><h3 id="logoRodape">GENETIC</h3></a></div>
+      <div class="coluna flex">
+          <a class="footerh" href=""><h4>Contato</h4></a>
+          <a class="footerh" href="">Dúvidas frequentes</a>
+          <a class="footerh" href="">Trocas e devoluções</a>
+          <a class="footerh" href="">Fretes e entregas</a>
+        </div>
+        <div class="coluna flex"> 
+            <a class="footerh" href=""><h4>Quem somos</h4></a>
+            <a class="footerh" href="">Sobre nós</a>
+        </div>
+        <div class="coluna flex">
+            <a class="footerh" href=""><h4>Redes Sociais</h4></a>
+            <a class="footerh" href="https://www.instagram.com/genetic.supply/"> <img class="icone" src="img/instaicone.png" alt=""></a>
+            <a class="footerh" href=""> <img class="icone" src="img/zapicone.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>
