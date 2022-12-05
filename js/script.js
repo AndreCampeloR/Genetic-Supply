@@ -36,11 +36,16 @@ let r = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[*@#&])[0-9a-zA-Z*@#&]{8,}$/
 
 function fugaDireita(){
     criar.addEventListener("mouseover", function(){
+        if($(senha).hasClass('error')){
         criar.classList.remove('BtnEsquerda')
         criar.classList.add('BtnDireita') 
         fugaEsquerda();
-    })
-    }
+    } else{
+        criar.classList.remove('BtnDireita');
+        criar.classList.remove('BtnEsquerda');
+        return;
+    }})};
+    
     function fugaEsquerda(){
         criar.addEventListener("mouseover", function(){
             criar.classList.remove('BtnDireita');
@@ -49,12 +54,13 @@ function fugaDireita(){
         })
             
         } 
-        $(senha).keydown(function() {
+        $(senha).keypress(function() {
             if (senha.value.match(r)) {
                 senha.classList.remove('error');
                 senha.classList.add('certo');
                 criar.classList.remove('BtnDireita');
                 criar.classList.remove('BtnEsquerda');
+                return;
                 
                 // senhaCerta();
                 
